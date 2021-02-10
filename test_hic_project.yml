@@ -1,0 +1,30 @@
+
+#########################################
+# TEST HiC project yaml
+# SRA: SRR5339787
+# Accession no: GSM2533822
+#########################################
+
+#######################################
+# paths to raw input data (fastq-s):
+#######################################
+input:
+    raw_reads_paths:
+        your_library_name_1:
+            lane1:
+                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
+    # Truncate input fastqs to a small number of reads (e.g. 10000) for
+    # semi-dry test runs.
+    truncate_fastq_reads: 0
+
+    # Specify a reference genome to align sequenced reads.
+    # Provide the genome assembly name, a wildcard path to the BWA index files
+    # of the reference genome, and a tab-separated table with contig sizes
+    # (known as "chrom.sizes"). The latter is used to specify the subset and the
+    # order of contigs in a resulting contact map.
+    genome:
+        assembly_name: 'mm10'
+        bwa_index_wildcard_path: '/path/to/your/reference/genome/hg19.fa.*'
+        chrom_sizes_path:   '/path/to/your/reference/genome/hg19.reduced.chrom.sizes'
