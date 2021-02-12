@@ -26,8 +26,8 @@ input:
     # order of contigs in a resulting contact map.
     genome:
         assembly_name: 'mm10'
-        bwa_index_wildcard_path: '/path/to/your/reference/genome/hg19.fa.*'
-        chrom_sizes_path:   '/path/to/your/reference/genome/hg19.reduced.chrom.sizes'
+        bwa_index_wildcard_path: '/Users/westc/references/Mus_musculus/UCSC/mm10/Sequence/BWAIndex/genome.fa.*'
+        chrom_sizes_path:   '/Users/westc/references/Mus_musculus/UCSC/mm10/Sequence/ChromSizes/genome.fa.fai'
 
 # Choose if you want to do FastQC of the input files:
 do_fastqc: True 
