@@ -9,7 +9,7 @@
 #######################################
 input:
     raw_reads_paths:
-        your_library_name_1:
+        SRR5339787:
             lane1:
                 - ./hic_data/fastq/sub1.fastq.gz
                 - ./hic_data/fastq/sub2.fastq.gz
