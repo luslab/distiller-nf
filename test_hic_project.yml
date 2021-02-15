@@ -47,15 +47,15 @@ map:
     # The optimal chunk size is defined by the balance between mapping and merging.
     # Smaller chunks (~30M) are better for clusters with many weak nodes,
     # however, having >~10 chunks per run slow down merging.
-    chunksize: 0
+    # chunksize: 0
 
     # Specify extra BWA mapping options.
-    mapping_options: ''
+    mapping_options: '-v 3'
 
     # Specify fastp trim options.
     #i.e. parameters
     #--detect_adapter_for_pe -q 15
-    trim_options: ''
+    trim_options: '-q 20 --json /dev/null'
 
     # A more technical option, use a custom script to split fastq files from SRA 
     # into two files, one per read side. By default it is true, which is
@@ -75,7 +75,7 @@ parse:
     # and I/O requirements and should be used only when absolutely needed.
     # NOTE: when 'make_pairsam' is False, the initial output of parsing is still
     # called '.pairsam' despite missing SAM alignments, for technical reasons.
-    make_pairsam: False
+    make_pairsam: True
 
     # When 'make_pairsam' is True, enabling 'drop_seq' erases sequences and
     # Phred scores from the SAM alignments in .pairsam and .bam output files.
@@ -87,20 +87,28 @@ parse:
     # lightweight .pairs files
     # NOTE: does not affect alignment records in the .pairsam files and
     # subsequently .bam files after .apirsam splitting.
-    drop_readid: True
+    drop_readid: False
 
     # When 'keep_unparsed_bams' is True, distiller preserves the _immediate_
     # output of bwa in a .bam format. Could be used as a faster alternative
     # to 'make_pairsam' when alignments are needed, but tagging them with Hi-C
     # related information is not necessary.
-    keep_unparsed_bams: False
+    keep_unparsed_bams: True
 
     # Pass extra options to pairtools parse, on top of the ones specified by
     # flags 'make_pairsam', 'drop_readid', 'drop_seq'. The default value
     # enables storing MAPQ scores in the .pairsam/.pairs output, which are
     # used later for filtering/binning. The default walks-policy is 'mask'
     # which masks complex walks in long reads.
-    parsing_options: '--add-columns mapq --walks-policy mask'
+    parsing_options: '--add-columns mapq'
+
+# Control how PCR/optical duplicates are detected in the data.
+dedup:
+    # PCR/optical duplicates are detected as Hi-C pairs with matching locations
+    # on both sides. 'max_mismatch_bp' controls the maximal allowed mismatch in
+    # mapped locations on either side for two pairs to be still considered as
+    # duplicates.
+    max_mismatch_bp: 3
 
     # Control how Hi-C pairs are binned into contact maps, stored in .cool files.
 bin:
