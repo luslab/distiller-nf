@@ -12,8 +12,8 @@ input:
     raw_reads_paths:
         your_library_name_1:
             lane1:
-                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
-                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/sub1.fastq.gz
+                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/sub2.fastq.gz
 
     # Truncate input fastqs to a small number of reads (e.g. 10000) for
     # semi-dry test runs.
