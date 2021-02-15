@@ -10,14 +10,10 @@
 #######################################
 input:
     raw_reads_paths:
-        SRR5339787:
+        your_library_name_1:
             lane1:
-                - ./hic_data/sub1.fastq.gz #SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
-                - ./hic_data/sub2.fastq.gz #SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
-                
-                
-# - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/sub1.fastq.gz #SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
-# - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/sub2.fastq.gz #SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /Users/westc/Nextflow/dev/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
 
     # Truncate input fastqs to a small number of reads (e.g. 10000) for
     # semi-dry test runs.
@@ -30,14 +26,11 @@ input:
     # order of contigs in a resulting contact map.
     genome:
         assembly_name: 'mm10'
-        bwa_index_wildcard_path: 'hic_data/genome/mm10.fa.*'
-        chrom_sizes_path: 'hic_data/genome/mm10.chrom.sizes'
-        
-# bwa_index_wildcard_path: '/Users/westc/references/Mus_musculus/UCSC/mm10/Sequence/BWAIndex/genome.fa.*'
-# chrom_sizes_path: '/Users/westc/references/Mus_musculus/UCSC/mm10/Sequence/ChromSizes/chrom_sizes.fa.fai'
+        bwa_index_wildcard_path: '/Users/westc/references/Mus_musculus/UCSC/mm10/Sequence/BWAIndex/genome.fa.*'
+        chrom_sizes_path: '/Users/westc/references/Mus_musculus/UCSC/mm10/Sequence/ChromSizes/chrom_sizes.fa.fai'
 
 # Choose if you want to do FastQC of the input files:
-do_fastqc: False 
+do_fastqc: True 
 
 # Control how reads are mapped to the reference genomes.
 map:
