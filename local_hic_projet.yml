@@ -24,9 +24,11 @@ input:
     # (known as "chrom.sizes"). The latter is used to specify the subset and the
     # order of contigs in a resulting contact map.
     genome:
-        assembly_name: 'mm10'
-        bwa_index_wildcard_path: 'hic_data/genome/mm10.fa.*'
-        chrom_sizes_path: 'hic_data/genome/mm10.chrom.sizes'
+        assembly_name: 'mm10_chr6'
+        # bwa_index_wildcard_path: 'hic_data/genome/mm10.fa.*'
+        # chrom_sizes_path: 'hic_data/genome/mm10.chrom.sizes'
+        bwa_index_wildcard_path: 'hic_data/small_genome/mm10_chr6.fa.*'
+        chrom_sizes_path: 'hic_data/small_genome/mm10_chr6.chrom.sizes'
 
 # Choose if you want to do FastQC of the input files:
 do_fastqc: True 
