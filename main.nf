@@ -427,7 +427,7 @@ process fastqc{
         "${library}.${run}.${chunk}.${side}_fastqc.zip" into LIB_RUN_CHUNK_SIDE_QCS
 
     """
-    TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+    TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
     ln -s \"\$(readlink -f ${fastq})\" \$TASK_TMP_DIR/${library}.${run}.${chunk}.${side}.fastq.gz
     fastqc --threads ${task.cpus} -o ./ -f fastq \$TASK_TMP_DIR/${library}.${run}.${chunk}.${side}.fastq.gz
     rm -r \$TASK_TMP_DIR
@@ -494,7 +494,7 @@ process map_parse_sort_chunks {
 
 
     """
-    TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+    TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
     touch ${library}.${run}.${ASSEMBLY_NAME}.${chunk}.bam
 
     ${mapping_command} \
@@ -547,7 +547,7 @@ process merge_dedup_splitbam {
 
     if(make_pairsam)
         """
-        TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+        TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
 
         ${merge_command} | pairtools dedup \
             --max-mismatch ${params.dedup.max_mismatch_bp} \
@@ -575,7 +575,7 @@ process merge_dedup_splitbam {
         """
     else
         """
-        TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+        TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
 
         ${merge_command} | pairtools dedup \
             --max-mismatch ${params.dedup.max_mismatch_bp} \
