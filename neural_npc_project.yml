@@ -9,10 +9,144 @@
 #######################################
 input:
     raw_reads_paths:
+        SRR5339803:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339803_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339803_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339794:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339794_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339794_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339788:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339788_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339788_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339799:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339799_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339799_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339801:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339801_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339801_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339786:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339786_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339786_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339791:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339791_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339791_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339789:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339789_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339789_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339798:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339798_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339798_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339800:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339800_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339800_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339797:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339797_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339797_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339792:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339792_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339792_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339796:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339796_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339796_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339802:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339802_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339802_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+        SRR5339790:
+            lane1:
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339790_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339790_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+
         SRR5339787:
             lane1:
-                - ./hic_data/fastq/sub1.fastq.gz
-                - ./hic_data/fastq/sub2.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+                - /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+        
+#/camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339803_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339794_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339788_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339799_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339801_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339786_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339791_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339799_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339789_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339794_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339798_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339800_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339797_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339792_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339796_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339802_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339798_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339790_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339791_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339800_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339788_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339803_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339797_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339801_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339792_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339790_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339786_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339787_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339789_GSM2533822_HiC_NPC_1_Mus_musculus_OTHER_1.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339802_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_2.fastq.gz
+# /camp/lab/luscomben/home/users/westc/data/neural_hic_data/hic_npc/SRR5339796_GSM2533823_HiC_NPC_2_Mus_musculus_OTHER_1.fastq.gz
+
+ # independent libraries can be combined together
+    # on the level of binned-data (.cool files)
+    # describe your groupings of choice here:
+    library_groups:
+        all:
+            - SRR5339803
+            - SRR5339794
+            - SRR5339788
+            - SRR5339799
+            - SRR5339801
+            - SRR5339786
+            - SRR5339791
+            - SRR5339789
+            - SRR5339798
+            - SRR5339800
+            - SRR5339797
+            - SRR5339792
+            - SRR5339796
+            - SRR5339802
+            - SRR5339790
+            - SRR5339787
+
 
     # Truncate input fastqs to a small number of reads (e.g. 10000) for
     # semi-dry test runs.
@@ -24,11 +158,11 @@ input:
     # (known as "chrom.sizes"). The latter is used to specify the subset and the
     # order of contigs in a resulting contact map.
     genome:
-        assembly_name: 'mm10_chr6'
+        assembly_name: 'mm10'
         # bwa_index_wildcard_path: 'hic_data/genome/mm10.fa.*'
         # chrom_sizes_path: 'hic_data/genome/mm10.chrom.sizes'
-        bwa_index_wildcard_path: 'hic_data/small_genome/mm10_chr6.fa.*'
-        chrom_sizes_path: 'hic_data/small_genome/mm10_chr6.chrom.sizes'
+        bwa_index_wildcard_path: '/camp/lab/luscomben/reference/Genomics/aws-igenomes/Mus_musculus/UCSC/mm10/Sequence/BWAIndex/genome.fa.*'
+        chrom_sizes_path: '/camp/home/westc/westc/data/mm10.chrom.sizes'
 
 # Choose if you want to do FastQC of the input files:
 do_fastqc: True 
