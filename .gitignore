@@ -17,3 +17,4 @@ test/genome/*
 pipeline_info/*
 work/*
 results/*
+hic_data/*

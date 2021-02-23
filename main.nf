@@ -284,6 +284,9 @@ String fastqLocalTruncateChunkCmd(path, library, run, side,
 process download_truncate_chunk_fastqs{
     tag "library:${library} run:${run}"
     storeDir getOutputDir('processed_fastqs')
+    label "avg_cores"
+    label "avg_mem"
+    label "regular_queue"
 
     input:
     set val(library), val(run),
@@ -328,6 +331,9 @@ process download_truncate_chunk_fastqs{
 process local_truncate_chunk_fastqs{
     tag "library:${library} run:${run}"
     storeDir getOutputDir('processed_fastqs')
+    label "avg_cores"
+    label "avg_mem"
+    label "regular_queue"
 
     input:
     set val(library), val(run),
@@ -416,6 +422,9 @@ process fastqc{
 
     tag "library:${library} run:${run} chunk:${chunk} side:${side}"
     storeDir getOutputDir('fastqc')
+    label "avg_cores"
+    label "avg_mem"
+    label "regular_queue"
 
     input:
     set val(library), val(run), val(chunk), val(side),
@@ -427,7 +436,7 @@ process fastqc{
         "${library}.${run}.${chunk}.${side}_fastqc.zip" into LIB_RUN_CHUNK_SIDE_QCS
 
     """
-    TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+    TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
     ln -s \"\$(readlink -f ${fastq})\" \$TASK_TMP_DIR/${library}.${run}.${chunk}.${side}.fastq.gz
     fastqc --threads ${task.cpus} -o ./ -f fastq \$TASK_TMP_DIR/${library}.${run}.${chunk}.${side}.fastq.gz
     rm -r \$TASK_TMP_DIR
@@ -451,6 +460,9 @@ BWA_INDEX = Channel.from([[
 process map_parse_sort_chunks {
     tag "library:${library} run:${run} chunk:${chunk}"
     storeDir getOutputDir('mapped_parsed_sorted_chunks')
+    label "avg_cores"
+    label "max_mem"
+    label "regular_queue"
 
     input:
     set val(library), val(run), val(chunk), file(fastq1), file(fastq2) from LIB_RUN_CHUNK_FASTQS
@@ -494,7 +506,7 @@ process map_parse_sort_chunks {
 
 
     """
-    TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+    TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
     touch ${library}.${run}.${ASSEMBLY_NAME}.${chunk}.bam
 
     ${mapping_command} \
@@ -523,6 +535,9 @@ LIB_RUN_CHUNK_PAIRSAMS
 process merge_dedup_splitbam {
     tag "library:${library}"
     storeDir getOutputDir('pairs_library')
+    label "avg_cores"
+    label "high_mem"
+    label "regular_queue"
 
     input:
     set val(library), file(run_pairsam) from LIB_PAIRSAMS_TO_MERGE
@@ -547,7 +562,7 @@ process merge_dedup_splitbam {
 
     if(make_pairsam)
         """
-        TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+        TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
 
         ${merge_command} | pairtools dedup \
             --max-mismatch ${params.dedup.max_mismatch_bp} \
@@ -575,7 +590,7 @@ process merge_dedup_splitbam {
         """
     else
         """
-        TASK_TMP_DIR=\$(mktemp -d -p ${task.distillerTmpDir} distiller.tmp.XXXXXXXXXX)
+        TASK_TMP_DIR=\$(mktemp -d distiller.tmp.XXXXXXXXXX)
 
         ${merge_command} | pairtools dedup \
             --max-mismatch ${params.dedup.max_mismatch_bp} \
@@ -611,6 +626,9 @@ FILTERS
 process bin_zoom_library_pairs{
     tag "library:${library} filter:${filter_name}"
     storeDir getOutputDir('coolers_library')
+    label "avg_cores"
+    label "high_mem"
+    label "regular_queue"
 
     input:
         set val(filter_name), val(filter_expr), val(library), file(pairs_lib) from LIB_FILTER_PAIRS
@@ -660,6 +678,9 @@ LIBRARY_GROUPS_FOR_COOLER_MERGE
 process merge_zoom_library_group_coolers{
     tag "library_group:${library_group} filter:${filter_name}"
     publishDir path: getOutputDir('coolers_library_group'), mode: "copy"
+    label "avg_cores"
+    label "high_mem"
+    label "regular_queue"
 
     input:
         set val(library_group), val(filter_name), file(coolers) from LIBGROUP_FILTER_COOLERS_TO_MERGE
@@ -719,6 +740,9 @@ LIBRARY_GROUPS_FOR_STATS_MERGE
 process merge_stats_libraries_into_groups {
     tag "library_group:${library_group}"
     publishDir path: getOutputDir('stats_library_group'), mode: "copy"
+    label "low_cores"
+    label "low_mem"
+    label "regular_queue"
 
     input:
     set val(library_group), file(stats) from LIBGROUP_STATS_TO_MERGE

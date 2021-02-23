@@ -23,6 +23,6 @@ dependencies:
     - pairix
     - pairtools
     - fastp
-    - pip:
-        - cooler>=0.8.5
-        - toolz
+    - cooler>=0.8.5
+    - toolz
+
