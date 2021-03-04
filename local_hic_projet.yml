@@ -118,7 +118,7 @@ bin:
         - 20000
         - 10000
     # Specify if the multi-resolution .cool output files should be balanced.
-    balance: true
+    balance: false
 
     # Pass additional parameters to cooler balance:
     # balance_options: ''
