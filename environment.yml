@@ -25,4 +25,5 @@ dependencies:
     - fastp
     - cooler>=0.8.5
     - toolz
+    - hicexplorer
 
