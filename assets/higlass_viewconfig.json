@@ -1,0 +1,290 @@
+{
+  "editable": true,
+  "zoomFixed": false,
+  "trackSourceServers": [
+    "/api/v1",
+    "http://higlass.io/api/v1"
+  ],
+  "exportViewUrl": "/api/v1/viewconfs/",
+  "views": [
+    {
+      "tracks": {
+        "top": [
+          {
+            "type": "combined",
+            "uid": "RMKplPXWTlaaFk7-n18qIA",
+            "height": 28,
+            "width": 1152,
+            "contents": [
+              {
+                "filetype": "bed2ddb",
+                "server": "http://localhost:8989/api/v1",
+                "tilesetUid": "c_nJYRfUTWWKcgWHhYTM_Q",
+                "uid": "P0IjDsN5Qo-syuzvYvdPzQ",
+                "type": "linear-2d-rectangle-domains",
+                "options": {
+                  "labelColor": "black",
+                  "labelPosition": "bottomLeft",
+                  "labelLeftMargin": 0,
+                  "labelRightMargin": 0,
+                  "labelTopMargin": 0,
+                  "labelBottomMargin": 0,
+                  "trackBorderWidth": 0,
+                  "trackBorderColor": "black",
+                  "rectangleDomainFillColor": "grey",
+                  "rectangleDomainStrokeColor": "black",
+                  "rectangleDomainOpacity": 0.6,
+                  "minSquareSize": "none",
+                  "name": "all.mm10.no_filter.10000.tad_domains.bedpedb"
+                },
+                "width": 1152,
+                "height": 54
+              },
+              {
+                "filetype": "bed2ddb",
+                "server": "http://localhost:8989/api/v1",
+                "tilesetUid": "Td3L50KmTASrxFRb3w6XPw",
+                "uid": "QN6Ca6oHQ9aD3_Dh4IDvJg",
+                "type": "linear-2d-rectangle-domains",
+                "options": {
+                  "labelColor": "black",
+                  "labelPosition": "bottomLeft",
+                  "labelLeftMargin": 0,
+                  "labelRightMargin": 0,
+                  "labelTopMargin": 0,
+                  "labelBottomMargin": 0,
+                  "trackBorderWidth": 0,
+                  "trackBorderColor": "black",
+                  "rectangleDomainFillColor": "turquoise",
+                  "rectangleDomainStrokeColor": "black",
+                  "rectangleDomainOpacity": 0.6,
+                  "minSquareSize": "none",
+                  "name": "param1.all.mm10.no_filter.10000.tad_domains.bedpedb"
+                },
+                "width": 1152,
+                "height": 54
+              }
+            ],
+            "options": {}
+          },
+          {
+            "filetype": "beddb",
+            "server": "http://higlass.io/api/v1",
+            "tilesetUid": "QDutvmyiSrec5nX4pA5WGQ",
+            "uid": "T3NzGI5IRtKK36LeeV1GSQ",
+            "type": "gene-annotations",
+            "options": {
+              "fontSize": 10,
+              "labelColor": "black",
+              "labelBackgroundColor": "#ffffff",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "minHeight": 24,
+              "plusStrandColor": "blue",
+              "minusStrandColor": "red",
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "showMousePosition": false,
+              "mousePositionColor": "#000000",
+              "geneAnnotationHeight": 16,
+              "geneLabelPosition": "outside",
+              "geneStrandSpacing": 4,
+              "name": "Gene Annotations (mm10)"
+            },
+            "width": 1152,
+            "height": 90
+          },
+          {
+            "filetype": "beddb",
+            "server": "http://localhost:8989/api/v1",
+            "tilesetUid": "RFtLBOHoTZOX4n4t1aGuvg",
+            "uid": "RITR_aC2REKpLzUyjWOGyw",
+            "type": "bedlike",
+            "options": {
+              "alternating": false,
+              "annotationStyle": "box",
+              "fillColor": "blue",
+              "fillOpacity": 0.3,
+              "fontSize": "10",
+              "axisPositionHorizontal": "right",
+              "labelColor": "black",
+              "labelPosition": "hidden",
+              "labelLeftMargin": 0,
+              "labelRightMargin": 0,
+              "labelTopMargin": 0,
+              "labelBottomMargin": 0,
+              "minHeight": 20,
+              "maxAnnotationHeight": null,
+              "trackBorderWidth": 0,
+              "trackBorderColor": "black",
+              "valueColumn": null,
+              "colorEncoding": "itemRgb",
+              "showTexts": false,
+              "colorRange": [
+                "#000000",
+                "#652537",
+                "#bf5458",
+                "#fba273",
+                "#ffffe0"
+              ],
+              "colorEncodingRange": false,
+              "separatePlusMinusStrands": true,
+              "annotationHeight": 16,
+              "name": "consensus_peaks.mRp.clN.bed.beddb",
+              "arcStyle": "ellipse"
+            },
+            "width": 1152,
+            "height": 52
+          }
+        ],
+        "left": [
+          {
+            "filetype": "chromsizes-tsv",
+            "server": "http://localhost:8989/api/v1",
+            "tilesetUid": "aMondGhRQCaXRM4K5_ogMw",
+            "uid": "BbehfGcLTdSv2-hLwvYcJQ",
+            "type": "chromosome-labels",
+            "options": {
+              "color": "#808080",
+              "stroke": "#ffffff",
+              "fontSize": 12,
+              "fontIsLeftAligned": false,
+              "showMousePosition": false,
+              "mousePositionColor": "#000000",
+              "reverseOrientation": false
+            },
+            "width": 20,
+            "height": 334
+          }
+        ],
+        "center": [
+          {
+            "uid": "KDIVKOTjRh-i3nfvBcAt6A",
+            "type": "combined",
+            "contents": [
+              {
+                "filetype": "cooler",
+                "server": "http://localhost:8989/api/v1",
+                "tilesetUid": "awZSsqffQwqAtHwqt_SISQ",
+                "uid": "ZvbesNr5Tdm80M2ZcZ_wFQ",
+                "type": "heatmap",
+                "options": {
+                  "backgroundColor": "#eeeeee",
+                  "labelPosition": "bottomRight",
+                  "labelLeftMargin": 0,
+                  "labelRightMargin": 0,
+                  "labelTopMargin": 0,
+                  "labelBottomMargin": 0,
+                  "labelShowResolution": true,
+                  "labelShowAssembly": true,
+                  "colorRange": [
+                    "white",
+                    "rgba(245,166,35,1.0)",
+                    "rgba(208,2,27,1.0)",
+                    "black"
+                  ],
+                  "colorbarBackgroundColor": "#ffffff",
+                  "maxZoom": null,
+                  "minWidth": 100,
+                  "minHeight": 100,
+                  "colorbarPosition": "topRight",
+                  "trackBorderWidth": 0,
+                  "trackBorderColor": "black",
+                  "heatmapValueScaling": "log",
+                  "showMousePosition": false,
+                  "mousePositionColor": "#000000",
+                  "showTooltip": false,
+                  "extent": "full",
+                  "zeroValueColor": null,
+                  "name": "all.mm10.no_filter.10000.mcool",
+                  "scaleStartPercent": "0.00000",
+                  "scaleEndPercent": "1.00000"
+                },
+                "width": 1152,
+                "height": 334,
+                "transforms": []
+              },
+              {
+                "filetype": "bed2ddb",
+                "server": "http://localhost:8989/api/v1",
+                "tilesetUid": "Td3L50KmTASrxFRb3w6XPw",
+                "uid": "EGneXBKkQ-uf3lrkkVFnEQ",
+                "type": "2d-rectangle-domains",
+                "options": {
+                  "flipDiagonal": "none",
+                  "labelColor": "black",
+                  "labelPosition": "hidden",
+                  "labelLeftMargin": 0,
+                  "labelRightMargin": 0,
+                  "labelTopMargin": 0,
+                  "labelBottomMargin": 0,
+                  "trackBorderWidth": 0,
+                  "trackBorderColor": "black",
+                  "rectangleDomainFillColor": "grey",
+                  "rectangleDomainStrokeColor": "black",
+                  "rectangleDomainOpacity": 0.6,
+                  "minSquareSize": "none",
+                  "name": "param1.all.mm10.no_filter.10000.tad_domains.bedpedb"
+                },
+                "width": 1152,
+                "height": 334
+              },
+              {
+                "filetype": "chromsizes-tsv",
+                "server": "http://localhost:8989/api/v1",
+                "tilesetUid": "aMondGhRQCaXRM4K5_ogMw",
+                "uid": "So_7sM9VRu-s98y_UNVbaA",
+                "type": "2d-chromosome-grid",
+                "options": {
+                  "lineStrokeWidth": 1,
+                  "lineStrokeColor": "grey"
+                },
+                "width": 1152,
+                "height": 334
+              }
+            ],
+            "width": 1152,
+            "height": 334,
+            "options": {}
+          }
+        ],
+        "right": [],
+        "bottom": [],
+        "whole": [],
+        "gallery": []
+      },
+      "initialXDomain": [
+        372110148.1972738,
+        1481559382.4456186
+      ],
+      "initialYDomain": [
+        67383491.07137397,
+        468981000.34356153
+      ],
+      "layout": {
+        "w": 10,
+        "h": 9,
+        "x": 1,
+        "y": 0,
+        "moved": false,
+        "static": false
+      },
+      "uid": "QPLIlkEYRxG1Ug5a4DKD-A"
+    }
+  ],
+  "zoomLocks": {
+    "locksByViewUid": {},
+    "locksDict": {}
+  },
+  "locationLocks": {
+    "locksByViewUid": {},
+    "locksDict": {}
+  },
+  "valueScaleLocks": {
+    "locksByViewUid": {},
+    "locksDict": {}
+  }
+}
