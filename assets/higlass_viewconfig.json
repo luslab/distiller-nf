@@ -67,7 +67,7 @@
                   "name": "all.mm10.no_filter.10000.tad_domains.bedpedb"
                 },
                 "width": 1477,
-                "height": 58
+                "height": 39
               },
               {
                 "filetype": "bed2ddb",
@@ -91,7 +91,7 @@
                   "name": "param1.all.mm10.no_filter.10000.tad_domains.bedpedb"
                 },
                 "width": 1477,
-                "height": 58
+                "height": 39
               }
             ],
             "options": {}
@@ -134,40 +134,12 @@
               "annotationHeight": 16,
               "name": "consensus_peaks.mRp.clN.bed.beddb",
               "arcStyle": "ellipse",
-              "strokeColor": "black"
+              "strokeColor": "black",
+              "flip1D": "no",
+              "strokeWidth": 1
             },
             "width": 1477,
             "height": 17
-          },
-          {
-            "filetype": "beddb",
-            "server": "http://higlass.io/api/v1",
-            "tilesetUid": "QDutvmyiSrec5nX4pA5WGQ",
-            "uid": "T3NzGI5IRtKK36LeeV1GSQ",
-            "type": "gene-annotations",
-            "options": {
-              "fontSize": 10,
-              "labelColor": "black",
-              "labelBackgroundColor": "#ffffff",
-              "labelPosition": "hidden",
-              "labelLeftMargin": 0,
-              "labelRightMargin": 0,
-              "labelTopMargin": 0,
-              "labelBottomMargin": 0,
-              "minHeight": 24,
-              "plusStrandColor": "blue",
-              "minusStrandColor": "red",
-              "trackBorderWidth": 0,
-              "trackBorderColor": "black",
-              "showMousePosition": false,
-              "mousePositionColor": "#000000",
-              "geneAnnotationHeight": 16,
-              "geneLabelPosition": "outside",
-              "geneStrandSpacing": 4,
-              "name": "Gene Annotations (mm10)"
-            },
-            "width": 1477,
-            "height": 72
           },
           {
             "filetype": "bigwig",
@@ -920,7 +892,7 @@
               "barOpacity": 1,
               "name": "GSE96107_NPC_H3K27ac.bw"
             },
-            "width": 20,
+            "width": 1477,
             "height": 20
           },
           {
@@ -949,7 +921,7 @@
               "barOpacity": 1,
               "name": "GSE96107_NPC_H3K27me3.bw"
             },
-            "width": 20,
+            "width": 1477,
             "height": 20
           },
           {
@@ -978,7 +950,7 @@
               "barOpacity": 1,
               "name": "GSE96107_NPC_H3K4me3.bw"
             },
-            "width": 20,
+            "width": 1477,
             "height": 20
           }
         ],
@@ -999,7 +971,7 @@
               "reverseOrientation": false
             },
             "width": 20,
-            "height": 701
+            "height": 660
           }
         ],
         "center": [
@@ -1046,7 +1018,7 @@
                   "scaleEndPercent": "1.00000"
                 },
                 "width": 1477,
-                "height": 701,
+                "height": 660,
                 "transforms": []
               },
               {
@@ -1072,7 +1044,7 @@
                   "name": "param1.all.mm10.no_filter.10000.tad_domains.bedpedb"
                 },
                 "width": 1477,
-                "height": 701
+                "height": 660
               },
               {
                 "filetype": "chromsizes-tsv",
@@ -1085,7 +1057,7 @@
                   "lineStrokeColor": "grey"
                 },
                 "width": 1477,
-                "height": 701
+                "height": 660
               },
               {
                 "filetype": "bed2ddb",
@@ -1110,11 +1082,11 @@
                   "name": "all.mm10.no_filter.10000.tad_domains.bedpedb"
                 },
                 "width": 1477,
-                "height": 701
+                "height": 660
               }
             ],
             "width": 1477,
-            "height": 701,
+            "height": 660,
             "options": {}
           }
         ],
@@ -1124,12 +1096,12 @@
         "gallery": []
       },
       "initialXDomain": [
-        374258591.76364785,
-        524444018.2469968
+        190303335.62752193,
+        238680876.16126776
       ],
       "initialYDomain": [
-        415063804.89611155,
-        484004711.5689014
+        -80214749.93344295,
+        -55649309.58116846
       ],
       "layout": {
         "w": 10,
